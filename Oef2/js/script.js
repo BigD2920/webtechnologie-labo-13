@@ -1,0 +1,17 @@
+let year = parseInt(
+  prompt("Van welk jaartal wil je checken of het een schrikkeljaar is?"),
+);
+
+if (year % 4 === 0) {
+  if (year % 100 === 0) {
+    if (year % 400 === 0) {
+      console.log(`${year} is een schrikkeljaar.`);
+    } else {
+      console.log(`${year} is geen schrikkeljaar!`);
+    }
+  } else {
+    console.log(`${year} is een schrikkeljaar.`);
+  }
+} else {
+  console.log(`${year} is geen schrikkeljaar!`);
+}
